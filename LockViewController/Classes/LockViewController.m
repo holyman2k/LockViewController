@@ -34,6 +34,10 @@ static id controller;
         }
     }
     
+    if ([presentingController isKindOfClass:[UINavigationController class]]){
+        presentingController = [(UINavigationController *)presentingController topViewController];
+    }
+    
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         controller = [[[NSBundle mainBundle] loadNibNamed:@"LockView_iPad" owner:self options:nil] lastObject];
     } else {
