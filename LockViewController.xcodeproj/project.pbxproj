@@ -16,6 +16,11 @@
 		6F5EFFA91761883400C856A5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EFFA81761883400C856A5 /* Default.png */; };
 		6F5EFFAB1761883400C856A5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EFFAA1761883400C856A5 /* Default@2x.png */; };
 		6F5EFFAD1761883400C856A5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EFFAC1761883400C856A5 /* Default-568h@2x.png */; };
+		6F5EFFCD176188F000C856A5 /* LockView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EFFC9176188F000C856A5 /* LockView_iPad.xib */; };
+		6F5EFFCE176188F000C856A5 /* LockView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EFFCA176188F000C856A5 /* LockView_iPhone.xib */; };
+		6F5EFFCF176188F000C856A5 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5EFFCC176188F000C856A5 /* LockViewController.m */; };
+		6F5EFFD11761893500C856A5 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EFFD01761893500C856A5 /* Storyboard_iPad.storyboard */; };
+		6F5EFFD417618B2900C856A5 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5EFFD317618B2900C856A5 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,13 @@
 		6F5EFFA81761883400C856A5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6F5EFFAA1761883400C856A5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6F5EFFAC1761883400C856A5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6F5EFFC9176188F000C856A5 /* LockView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LockView_iPad.xib; path = Classes/LockView_iPad.xib; sourceTree = "<group>"; };
+		6F5EFFCA176188F000C856A5 /* LockView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LockView_iPhone.xib; path = Classes/LockView_iPhone.xib; sourceTree = "<group>"; };
+		6F5EFFCB176188F000C856A5 /* LockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LockViewController.h; path = Classes/LockViewController.h; sourceTree = "<group>"; };
+		6F5EFFCC176188F000C856A5 /* LockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LockViewController.m; path = Classes/LockViewController.m; sourceTree = "<group>"; };
+		6F5EFFD01761893500C856A5 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
+		6F5EFFD217618B2900C856A5 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		6F5EFFD317618B2900C856A5 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +90,13 @@
 		6F5EFF9C1761883400C856A5 /* LockViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6F5EFFBA1761887600C856A5 /* Classes */,
 				6F5EFFA51761883400C856A5 /* AppDelegate.h */,
 				6F5EFFA61761883400C856A5 /* AppDelegate.m */,
 				6F5EFF9D1761883400C856A5 /* Supporting Files */,
+				6F5EFFD01761893500C856A5 /* Storyboard_iPad.storyboard */,
+				6F5EFFD217618B2900C856A5 /* MyViewController.h */,
+				6F5EFFD317618B2900C856A5 /* MyViewController.m */,
 			);
 			path = LockViewController;
 			sourceTree = "<group>";
@@ -97,6 +113,17 @@
 				6F5EFFAC1761883400C856A5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F5EFFBA1761887600C856A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6F5EFFC9176188F000C856A5 /* LockView_iPad.xib */,
+				6F5EFFCA176188F000C856A5 /* LockView_iPhone.xib */,
+				6F5EFFCB176188F000C856A5 /* LockViewController.h */,
+				6F5EFFCC176188F000C856A5 /* LockViewController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +181,9 @@
 				6F5EFFA91761883400C856A5 /* Default.png in Resources */,
 				6F5EFFAB1761883400C856A5 /* Default@2x.png in Resources */,
 				6F5EFFAD1761883400C856A5 /* Default-568h@2x.png in Resources */,
+				6F5EFFCD176188F000C856A5 /* LockView_iPad.xib in Resources */,
+				6F5EFFCE176188F000C856A5 /* LockView_iPhone.xib in Resources */,
+				6F5EFFD11761893500C856A5 /* Storyboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +196,8 @@
 			files = (
 				6F5EFFA31761883400C856A5 /* main.m in Sources */,
 				6F5EFFA71761883400C856A5 /* AppDelegate.m in Sources */,
+				6F5EFFCF176188F000C856A5 /* LockViewController.m in Sources */,
+				6F5EFFD417618B2900C856A5 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +279,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LockViewController/LockViewController-Prefix.pch";
 				INFOPLIST_FILE = "LockViewController/LockViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -258,6 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LockViewController/LockViewController-Prefix.pch";
 				INFOPLIST_FILE = "LockViewController/LockViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
