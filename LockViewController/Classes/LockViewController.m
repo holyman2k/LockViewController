@@ -25,8 +25,8 @@ static id controller;
     UIViewController *presentingController = viewController;
     
     if ([[UIDevice currentDevice].systemVersion floatValue] < 6) {
-        while (presentingController.modalViewController){
-            presentingController = presentingController.modalViewController;
+        while (presentingController.presentedViewController){
+            presentingController = presentingController.presentedViewController;
         }
     } else {        
         while (presentingController.presentedViewController){
@@ -45,7 +45,7 @@ static id controller;
         
     }
     [controller setUnlockCode:unlockCode];
-    [presentingController presentModalViewController:controller animated:NO];
+    [presentingController presentViewController:controller animated:NO completion:nil];
 }
 
 - (void)viewDidLoad
@@ -63,7 +63,7 @@ static id controller;
     NSString *key =[self.userInput substringWithRange:NSMakeRange(from, length)];
     NSLog(@"key %@", key);
     if ([key isEqualToString:self.unlockCode]){
-        [self.presentingViewController dismissModalViewControllerAnimated:NO];
+        [self.presentedViewController dismissViewControllerAnimated:NO completion:nil];
         controller = nil;
     }
 }
