@@ -63,7 +63,7 @@ static id controller;
     NSString *key =[self.userInput substringWithRange:NSMakeRange(from, length)];
     NSLog(@"key %@", key);
     if ([key isEqualToString:self.unlockCode]){
-        [self.presentedViewController dismissViewControllerAnimated:NO completion:nil];
+        [self dismissViewControllerAnimated:NO completion:nil];
         controller = nil;
     }
 }
