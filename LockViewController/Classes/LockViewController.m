@@ -57,9 +57,9 @@ static id controller;
 - (IBAction)numberKeyPress:(UIButton *)sender
 {
     self.userInput = [self.userInput stringByAppendingString:sender.titleLabel.text];
-    int keyLength = self.unlockCode.length;
-    int from = self.userInput.length > keyLength ? self.userInput.length - keyLength : 0;
-    int length = self.userInput.length > keyLength ? keyLength : self.userInput.length;
+    NSInteger keyLength = self.unlockCode.length;
+    NSInteger from = self.userInput.length > keyLength ? self.userInput.length - keyLength : 0;
+    NSInteger length = self.userInput.length > keyLength ? keyLength : self.userInput.length;
     NSString *key =[self.userInput substringWithRange:NSMakeRange(from, length)];
     NSLog(@"key %@", key);
     if ([key isEqualToString:self.unlockCode]){
