@@ -52,6 +52,7 @@ static id controller;
 {
     [super viewDidLoad];
     self.userInput = @"";
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 - (IBAction)numberKeyPress:(UIButton *)sender
@@ -87,6 +88,10 @@ static id controller;
     if (self.interfaceOrientation == UIInterfaceOrientationPortrait && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         return NO;
     }
+    return YES;
+}
+
+- (BOOL)prefersStatusBarHidden {
     return YES;
 }
 
